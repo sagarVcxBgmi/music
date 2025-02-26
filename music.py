@@ -84,8 +84,8 @@ async def play(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def main():
     """Start the bot."""
-    TOKEN = os.environ.get("7507720145:AAGwwmsLkfpNS0LlTbfVfIDKZXPUalZEDwE")
-    if not TOKEN:
+    TOKEN = "7507720145:AAGwwmsLkfpNS0LlTbfVfIDKZXPUalZEDwE"
+     if not TOKEN:
         print("Error: TELEGRAM_BOT_TOKEN environment variable not set.")
         return
 
