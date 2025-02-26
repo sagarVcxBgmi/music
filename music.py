@@ -8,6 +8,10 @@ from telegram import Update
 from telegram.constants import ChatAction
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import yt_dlp
+import nest_asyncio
+
+# Apply nest_asyncio to allow nesting event loops
+nest_asyncio.apply()
 
 # Configure logging
 logging.basicConfig(
